@@ -1,0 +1,14 @@
+import React, { useReducer } from "react";
+import {{camelCase defaultName}}Reducer from "./{{camelCase defaultName}}Reducer";
+export * from "./{{camelCase defaultName}}Actions";
+
+export const {{properCase defaultName}}Context = React.createContext({});
+
+export default function {{properCase defaultName}}ContextProvider({ children }) {
+const [state, dispatch] = useReducer({{camelCase defaultName}}Reducer, {});
+return (
+<{{properCase defaultName}}Context.Provider value={[state, dispatch]}>
+  {children}
+</{{properCase defaultName}}Context.Provider>
+);
+}

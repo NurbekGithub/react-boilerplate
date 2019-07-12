@@ -224,8 +224,8 @@ react-test-renderer                                     15.5.4
     @ ./~/react-router-scroll/lib/ScrollBehaviorContext.js
     @ ./~/react-router-scroll/lib/useScroll.js
     @ ./~/react-router-scroll/lib/index.js
-    @ ./app/app.js
-    @ multi ./app/app.js
+    @ ./app/index.js
+    @ multi ./app/index.js
 ```
 
 - `history` Incompatible
@@ -257,13 +257,13 @@ Addressed here https://github.com/imagemin/imagemin-pngquant/issues/32 **_Needs 
   DEPRECATED. Configure gifsicle's interlaced option in it's own options. (gifsicle.interlaced)
   @ ./app/components/Header/index.js 47:0-34
   @ ./app/containers/App/index.js
-  @ ./app/app.js
-  @ multi eventsource-polyfill webpack-hot-middleware/client?reload=true ./app/app.js
+  @ ./app/index.js
+  @ multi eventsource-polyfill webpack-hot-middleware/client?reload=true ./app/index.js
   WARNING in ./app/components/Header/banner.jpg
   DEPRECATED. Configure optipng's optimizationLevel option in it's own options. (optipng.optimizationLevel)
   @ ./app/components/Header/index.js 47:0-34
   @ ./app/containers/App/index.js
-  @ ./app/app.js
-  @ multi eventsource-polyfill webpack-hot-middleware/client?reload=true ./app/app.js
+  @ ./app/index.js
+  @ multi eventsource-polyfill webpack-hot-middleware/client?reload=true ./app/index.js
 
   **_image-webpack-loader 2.0.0 → 3.2.0 <--- Rolled back_**

@@ -1,0 +1,43 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+{{#if memo}}
+import React, { memo } from 'react';
+{{else}}
+import React from 'react';
+{{/if}}
+// import PropTypes from 'prop-types';
+
+{{#if wantInnerRoutes}}
+import { Switch, Route } from "react-router-dom";
+{{/if}}
+// import {{ properCase name }} from "./{{ properCase name }}";
+import {{ properCase defaultName }}ContextProvider from "./{{ properCase defaultName }}Context";
+
+function {{ properCase name }}() {
+return (
+<{{ properCase defaultName }}ContextProvider>
+  {{#if wantInnerRoutes}}
+  <Switch>
+    {/*
+    <Route exact path="/{{properCase defaultName}}" component={{{properCase name}}} />*/}
+  </Switch>
+  {{else}}
+  <div>
+    Your components here//
+  </div>
+  {{/if}}
+</{{ properCase defaultName }}ContextProvider>
+);
+}
+
+{{ properCase name }}.propTypes = {};
+
+{{#if memo}}
+export default memo({{ properCase name }});
+{{else}}
+export default {{ properCase name }};
+{{/if}}

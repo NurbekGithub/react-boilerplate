@@ -3,7 +3,7 @@ module.exports = {
     'app/**/*.{js,jsx}',
     '!app/**/*.test.{js,jsx}',
     '!app/*/RbGenerated*/*.{js,jsx}',
-    '!app/app.js',
+    '!app/index.js',
     '!app/global-styles.js',
     '!app/*/*/Loadable.{js,jsx}',
   ],
