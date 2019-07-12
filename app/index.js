@@ -4,7 +4,7 @@ import './index.css';
 import { Router } from 'react-router-dom';
 import App from './App';
 import history from './config/history';
-import './config/i18n';
+import './i18n';
 import MuiPickersProvider from './MuiPickerProvider';
 import GlobalContext from './globalContexts';
 

@@ -3,6 +3,7 @@ import './App.css';
 import { createMuiTheme, CssBaseline } from '@material-ui/core';
 import green from '@material-ui/core/colors/green';
 import ThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import { useTranslation } from 'react-i18next';
 import Header from './components/Header';
 
 const theme = createMuiTheme({
@@ -23,9 +24,11 @@ const theme = createMuiTheme({
 });
 
 function App() {
+  const { t } = useTranslation('', { useSuspense: false });
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
+        {t('KEY')}
         <CssBaseline />
         <Header />
         <main>main</main>
